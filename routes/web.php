@@ -7,6 +7,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ConversationController;
 
 Route::get('/login', [LoginController::class, 'login']);
+Route::post('/postLogin', [LoginController::class, 'postLogin'])->name('postLogin');
+Route::get('/logout', [LoginController::class, 'logout']);
+
 Route::get('/auth/redirect', [LoginController::class, 'githubRedirect'])->name('auth.redirect');
 Route::get('/auth/callback', [LoginController::class, 'githubCallback']);
 
