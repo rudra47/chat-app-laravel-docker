@@ -13,8 +13,11 @@
             <input type="text" placeholder="username"/>
             <input type="password" placeholder="password"/>
             <button>login</button>
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
+
+
+            {{-- <p class="message">Not registered? <a href="#">Create an account</a></p> --}}
         </form>
+        <a href="{{ route('auth.redirect') }}"><button style="background: #060606">Login With Github</button></a>
     </div>
 </div>
 
