@@ -29,6 +29,6 @@ class LoginController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('chatBox');
+        return redirect()->route('conversation');
     }
 }
