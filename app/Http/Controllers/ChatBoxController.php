@@ -9,4 +9,8 @@ class ChatBoxController extends Controller
     public function chatBox(){
         return view('chat-box');
     }
+
+    public function postMessage(Request $request){
+        
+    }
 }

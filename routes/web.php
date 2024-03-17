@@ -10,5 +10,6 @@ Route::get('/auth/redirect', [LoginController::class, 'githubRedirect'])->name('
 Route::get('/auth/callback', [LoginController::class, 'githubCallback']);
 
 Route::get('/chat-box', [ChatBoxController::class, 'chatBox'])->name('chatBox');
+Route::post('/post-message', [ChatBoxController::class, 'postMessage'])->name('postMessage');
 
 // Route::get('/', 'WebController@home')->name('home');
